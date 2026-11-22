@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="interfaz.FormPrincipal">
+  <grid id="c0000" binding="Ventana" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="8" left="8" bottom="8" right="8"/>
+    <constraints><xy x="20" y="20" width="720" height="640"/></constraints>
+    <properties/><border type="none"/>
+    <children>
+      <component id="c0001" class="javax.swing.JLabel" binding="lblSesion">
+        <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Sesión activa"/></properties>
+      </component>
+      <component id="c0002" class="javax.swing.JButton" binding="btnCerrarSesion" default-binding="true">
+        <constraints><grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Cerrar sesión"/></properties>
+      </component>
+      <tabbedpane id="c0003" binding="tabs">
+        <constraints><grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/><border type="none"/><children>
+      <grid id="c0042" binding="panelCiudadanos" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="6" left="8" bottom="6" right="8"/>
+        <constraints><tabbedpane title="Ciudadanos"/></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0027" class="javax.swing.JLabel" binding="lblTituloCiu">
+        <constraints><grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="GESTIÓN DE CIUDADANOS"/></properties>
+      </component>
+          <component id="c0028" class="javax.swing.JButton" binding="btnLimpiarCiu" default-binding="true">
+        <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Limpiar"/></properties>
+      </component>
+          <component id="c0029" class="javax.swing.JLabel">
+        <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Cédula:"/></properties>
+      </component>
+          <component id="c0030" class="javax.swing.JTextField" binding="txtCedulaCiu">
+        <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0031" class="javax.swing.JButton" binding="btnConsultarCiu" default-binding="true">
+        <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Consultar perfil"/></properties>
+      </component>
+          <component id="c0032" class="javax.swing.JLabel" binding="lblOrdenCiu">
+        <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ordenar por:"/></properties>
+      </component>
+          <component id="c0033" class="javax.swing.JComboBox" binding="cmbOrdenCiu">
+        <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0034" class="javax.swing.JButton" binding="btnOrdenarCiu" default-binding="true">
+        <constraints><grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ordenar"/></properties>
+      </component>
+          <component id="c0035" class="javax.swing.JLabel" binding="lblFiltroCiu">
+        <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Filtrar por:"/></properties>
+      </component>
+          <component id="c0036" class="javax.swing.JComboBox" binding="cmbFiltroCiu">
+        <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0037" class="javax.swing.JButton" binding="btnFiltrarCiu" default-binding="true">
+        <constraints><grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Filtrar"/></properties>
+      </component>
+          <component id="c0038" class="javax.swing.JButton" binding="btnResetCiu" default-binding="true">
+        <constraints><grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Restablecer contraseña"/></properties>
+      </component>
+          <component id="c0039" class="javax.swing.JButton" binding="btnBajaCiu" default-binding="true">
+        <constraints><grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Dar de baja"/></properties>
+      </component>
+          <scrollpane id="c0040">
+        <constraints><grid row="5" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <preferred-size width="560" height="260"/></grid></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0041" class="javax.swing.JTextArea" binding="txtAreaCiu">
+            <constraints/>
+            <properties><text value=""/></properties>
+          </component>
+        </children>
+      </scrollpane>
+        </children>
+      </grid>
+      <grid id="c0066" binding="panelEntregas" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="6" left="8" bottom="6" right="8"/>
+        <constraints><tabbedpane title="Entregas"/></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0043" class="javax.swing.JLabel">
+        <constraints><grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="ENTREGAS EN EL PUNTO LIMPIO"/></properties>
+      </component>
+          <component id="c0044" class="javax.swing.JButton" binding="btnLimpiarEnt" default-binding="true">
+        <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Limpiar"/></properties>
+      </component>
+          <component id="c0045" class="javax.swing.JLabel">
+        <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Cédula:"/></properties>
+      </component>
+          <component id="c0046" class="javax.swing.JTextField" binding="txtCedulaEnt">
+        <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0047" class="javax.swing.JButton" binding="btnTomarTurno" default-binding="true">
+        <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Tomar turno"/></properties>
+      </component>
+          <component id="c0048" class="javax.swing.JLabel" binding="lblTituloSiguiente">
+        <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Siguiente:"/></properties>
+      </component>
+          <component id="c0049" class="javax.swing.JLabel" binding="lblSiguiente">
+        <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="-"/></properties>
+      </component>
+          <component id="c0050" class="javax.swing.JButton" binding="btnVerFila" default-binding="true">
+        <constraints><grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ver fila"/></properties>
+      </component>
+          <component id="c0051" class="javax.swing.JLabel" binding="lblPuntoEnt">
+        <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Punto limpio:"/></properties>
+      </component>
+          <component id="c0052" class="javax.swing.JComboBox" binding="cmbPuntoEnt">
+        <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0053" class="javax.swing.JButton" binding="btnAtenderEnt" default-binding="true">
+        <constraints><grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Atender siguiente"/></properties>
+      </component>
+          <component id="c0054" class="javax.swing.JLabel" binding="lblMaterialEnt">
+        <constraints><grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Material:"/></properties>
+      </component>
+          <component id="c0055" class="javax.swing.JComboBox" binding="cmbMaterialEnt">
+        <constraints><grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0056" class="javax.swing.JButton" binding="btnDeshacerEnt" default-binding="true">
+        <constraints><grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Deshacer última"/></properties>
+      </component>
+          <component id="c0057" class="javax.swing.JLabel" binding="lblPesoEnt">
+        <constraints><grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Peso (kg):"/></properties>
+      </component>
+          <component id="c0058" class="javax.swing.JTextField" binding="txtPesoEnt">
+        <constraints><grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0059" class="javax.swing.JButton" binding="btnReporteMat" default-binding="true">
+        <constraints><grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Reporte por material"/></properties>
+      </component>
+          <component id="c0060" class="javax.swing.JLabel">
+        <constraints><grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Historial de:"/></properties>
+      </component>
+          <component id="c0061" class="javax.swing.JComboBox" binding="cmbFiltroMatEnt">
+        <constraints><grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0062" class="javax.swing.JButton" binding="btnHistorialEnt" default-binding="true">
+        <constraints><grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ver historial"/></properties>
+      </component>
+          <component id="c0063" class="javax.swing.JButton" binding="btnImpactoEnt" default-binding="true">
+        <constraints><grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Impacto ambiental"/></properties>
+      </component>
+          <scrollpane id="c0064">
+        <constraints><grid row="8" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <preferred-size width="560" height="260"/></grid></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0065" class="javax.swing.JTextArea" binding="txtAreaEnt">
+            <constraints/>
+            <properties><text value=""/></properties>
+          </component>
+        </children>
+      </scrollpane>
+        </children>
+      </grid>
+      <grid id="c0088" binding="panelRecompensas" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="6" left="8" bottom="6" right="8"/>
+        <constraints><tabbedpane title="Recompensas"/></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0067" class="javax.swing.JLabel">
+        <constraints><grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="CATÁLOGO DE RECOMPENSAS"/></properties>
+      </component>
+          <component id="c0068" class="javax.swing.JButton" binding="btnLimpiarRec" default-binding="true">
+        <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Limpiar"/></properties>
+      </component>
+          <component id="c0069" class="javax.swing.JLabel">
+        <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Cédula:"/></properties>
+      </component>
+          <component id="c0070" class="javax.swing.JTextField" binding="txtCedulaRec">
+        <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0071" class="javax.swing.JButton" binding="btnAlcanzablesRec" default-binding="true">
+        <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="¿Qué puede canjear?"/></properties>
+      </component>
+          <component id="c0072" class="javax.swing.JLabel" binding="lblOrdenRec">
+        <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ordenar por:"/></properties>
+      </component>
+          <component id="c0073" class="javax.swing.JComboBox" binding="cmbOrdenRec">
+        <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0074" class="javax.swing.JButton" binding="btnOrdenarRec" default-binding="true">
+        <constraints><grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ordenar"/></properties>
+      </component>
+          <component id="c0075" class="javax.swing.JLabel">
+        <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Filtrar por:"/></properties>
+      </component>
+          <component id="c0076" class="javax.swing.JComboBox" binding="cmbFiltroRec">
+        <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0077" class="javax.swing.JButton" binding="btnFiltrarRec" default-binding="true">
+        <constraints><grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Filtrar"/></properties>
+      </component>
+          <component id="c0078" class="javax.swing.JLabel" binding="lblIdActRec">
+        <constraints><grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="ID recompensa:"/></properties>
+      </component>
+          <component id="c0079" class="javax.swing.JTextField" binding="txtIdActRec">
+        <constraints><grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0080" class="javax.swing.JLabel" binding="lblPuntosActRec">
+        <constraints><grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Nuevos puntos:"/></properties>
+      </component>
+          <component id="c0081" class="javax.swing.JTextField" binding="txtPuntosActRec">
+        <constraints><grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0082" class="javax.swing.JLabel" binding="lblStockActRec">
+        <constraints><grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Nuevo stock:"/></properties>
+      </component>
+          <component id="c0083" class="javax.swing.JTextField" binding="txtStockActRec">
+        <constraints><grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0084" class="javax.swing.JButton" binding="btnActualizarRec" default-binding="true">
+        <constraints><grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Actualizar recompensa"/></properties>
+      </component>
+          <component id="c0085" class="javax.swing.JButton" binding="btnCatalogoRec" default-binding="true">
+        <constraints><grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ver catálogo completo"/></properties>
+      </component>
+          <scrollpane id="c0086">
+        <constraints><grid row="8" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <preferred-size width="560" height="260"/></grid></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0087" class="javax.swing.JTextArea" binding="txtAreaRec">
+            <constraints/>
+            <properties><text value=""/></properties>
+          </component>
+        </children>
+      </scrollpane>
+        </children>
+      </grid>
+      <grid id="c0102" binding="panelCanjes" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="6" left="8" bottom="6" right="8"/>
+        <constraints><tabbedpane title="Canjes y Reportes"/></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0089" class="javax.swing.JLabel">
+        <constraints><grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="CANJES Y REPORTES"/></properties>
+      </component>
+          <component id="c0090" class="javax.swing.JButton" binding="btnLimpiarCanje" default-binding="true">
+        <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Limpiar"/></properties>
+      </component>
+          <component id="c0091" class="javax.swing.JLabel">
+        <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Cédula:"/></properties>
+      </component>
+          <component id="c0092" class="javax.swing.JTextField" binding="txtCedulaCanje">
+        <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0093" class="javax.swing.JButton" binding="btnHistorialCanje" default-binding="true">
+        <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Historial de canjes"/></properties>
+      </component>
+          <component id="c0094" class="javax.swing.JLabel">
+        <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="ID recompensa:"/></properties>
+      </component>
+          <component id="c0095" class="javax.swing.JTextField" binding="txtIdRec">
+        <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0096" class="javax.swing.JButton" binding="btnSolicitarCanje" default-binding="true">
+        <constraints><grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Solicitar canje"/></properties>
+      </component>
+          <component id="c0097" class="javax.swing.JButton" binding="btnProcesarCanje" default-binding="true">
+        <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Procesar siguiente"/></properties>
+      </component>
+          <component id="c0098" class="javax.swing.JButton" binding="btnPendientesCanje" default-binding="true">
+        <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ver solicitudes pendientes"/></properties>
+      </component>
+          <component id="c0099" class="javax.swing.JButton" binding="btnReporte" default-binding="true">
+        <constraints><grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Reporte general"/></properties>
+      </component>
+          <scrollpane id="c0100">
+        <constraints><grid row="4" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <preferred-size width="560" height="260"/></grid></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0101" class="javax.swing.JTextArea" binding="txtAreaCanje">
+            <constraints/>
+            <properties><text value=""/></properties>
+          </component>
+        </children>
+      </scrollpane>
+        </children>
+      </grid>
+      <grid id="c0124" binding="panelRutas" layout-manager="GridLayoutManager" row-count="10" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="6" left="8" bottom="6" right="8"/>
+        <constraints><tabbedpane title="Rutas"/></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0103" class="javax.swing.JLabel">
+        <constraints><grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="MAPA DE RECOLECCIÓN"/></properties>
+      </component>
+          <component id="c0104" class="javax.swing.JButton" binding="btnLimpiarRutas" default-binding="true">
+        <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Limpiar"/></properties>
+      </component>
+          <component id="c0105" class="javax.swing.JLabel">
+        <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Nombre del punto:"/></properties>
+      </component>
+          <component id="c0106" class="javax.swing.JTextField" binding="txtNombrePunto">
+        <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0107" class="javax.swing.JLabel">
+        <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Sector:"/></properties>
+      </component>
+          <component id="c0108" class="javax.swing.JTextField" binding="txtSectorPunto">
+        <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0109" class="javax.swing.JLabel">
+        <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Tipo:"/></properties>
+      </component>
+          <component id="c0110" class="javax.swing.JComboBox" binding="cmbTipoPunto">
+        <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0111" class="javax.swing.JButton" binding="btnRegistrarPunto" default-binding="true">
+        <constraints><grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Registrar punto"/></properties>
+      </component>
+          <component id="c0112" class="javax.swing.JLabel">
+        <constraints><grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Origen:"/></properties>
+      </component>
+          <component id="c0113" class="javax.swing.JTextField" binding="txtOrigen">
+        <constraints><grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0114" class="javax.swing.JLabel">
+        <constraints><grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Destino:"/></properties>
+      </component>
+          <component id="c0115" class="javax.swing.JTextField" binding="txtDestino">
+        <constraints><grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0116" class="javax.swing.JLabel">
+        <constraints><grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Distancia (km):"/></properties>
+      </component>
+          <component id="c0117" class="javax.swing.JTextField" binding="txtDistancia">
+        <constraints><grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <preferred-size width="150" height="-1"/></grid></constraints>
+        <properties/>
+      </component>
+          <component id="c0118" class="javax.swing.JButton" binding="btnConectar" default-binding="true">
+        <constraints><grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Conectar puntos"/></properties>
+      </component>
+          <component id="c0119" class="javax.swing.JButton" binding="btnListarPuntos" default-binding="true">
+        <constraints><grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Ver mapa"/></properties>
+      </component>
+          <component id="c0120" class="javax.swing.JButton" binding="btnRequieren" default-binding="true">
+        <constraints><grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="Puntos que requieren recolección"/></properties>
+      </component>
+          <component id="c0121" class="javax.swing.JLabel">
+        <constraints><grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"></grid></constraints>
+        <properties><text value="La ruta más corta se implementará en la entrega final."/></properties>
+      </component>
+          <scrollpane id="c0122">
+        <constraints><grid row="9" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <preferred-size width="560" height="260"/></grid></constraints>
+        <properties/><border type="none"/><children>
+          <component id="c0123" class="javax.swing.JTextArea" binding="txtAreaRutas">
+            <constraints/>
+            <properties><text value=""/></properties>
+          </component>
+        </children>
+      </scrollpane>
+        </children>
+      </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
